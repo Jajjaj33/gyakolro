@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+article{
+    display: grid;
+    grid-template-areas: "A A B C"
+                         "D E E C"
+                         "F E E G"
+                         "H H H H";
+                         grid-template-columns:10vw 10vw 10vw 10vw;
+                         grid-template-rows:  10vw 10vw 10vw 10vw;
+}
+
+.A{
+    grid-template-areas: A;
+    background-color: red;
+}
+
+.B{
+    grid-template-areas: B;
+    background-color: blue;
+}
+.C{
+    grid-template-areas: C;
+    background-color: green;
+}
+.G{
+    grid-template-areas: G;
+    background-color: yellow;
+}
+.H{
+    grid-template-areas: H;
+    background-color: brown;
+}
+.F{
+    grid-template-areas: F;
+    background-color: cyan;
+}
+.D{
+    grid-template-areas: D;
+    background-color: orange;
+}
+.E{
+    grid-template-areas: E;
+    background-color: purple;
+}
+
+@media screen and (max-width: 600px){
+    main{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-areas:"A"
+                            "B"
+                            "C"
+                            "D"
+                            "E"
+                            "F"
+                            "G"
+                            "H";
+    }
+}
